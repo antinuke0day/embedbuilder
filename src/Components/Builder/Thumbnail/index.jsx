@@ -11,14 +11,7 @@ class Thumbnail extends React.Component {
 
   updateThumbnailURL(event) {
     let classNames = event.target.className.trim().split(' ');
-    if (event.target.value.length && !RegEx.imageURL.test(event.target.value)) {
-      classNames.push('invalid');
-    }
-    else {
-      classNames.splice(classNames.indexOf('invalid'), 1);
-    }
     event.target.className = [ ...new Set(classNames) ].join(' ').trim();
-
     this.setState({
       thumbnailURL: event.target.value
     });
