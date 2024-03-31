@@ -125,7 +125,7 @@ class Output extends React.Component {
       document.execCommand('Copy');
     }
     else {
-      console.error('Unable to automatically copy the output, please copy it manually and report the issue on GitHub: https://github.com/TheBastionBot/embedbuilder/issues/new?title=The+copy+button+is+not+working');
+      console.error('Unable to automatically copy the output, please copy it manually and report the issue');
     }
   }
 
@@ -135,10 +135,10 @@ class Output extends React.Component {
         <div id = "output-container">
           <div className = "controller">
             <button onClick = {() => this.generateJSON()}>
-              <span role="img" aria-label="Gear Emoji">⚙</span>&ensp;Generate JSON
+              <span role="img" aria-label="Gear Emoji">⚙</span>&ensp;Generate Embed Code
             </button>
             <button onClick = {() => this.copyJSON()}>
-              <span role="img" aria-label="Copy Emoji">🔗</span>&ensp;Copy JSON
+              <span role="img" aria-label="Copy Emoji">🔗</span>&ensp;Copy Embed Code
             </button>
           </div>
           <div className="output">

@@ -40,7 +40,7 @@ class Footer extends React.Component {
               name = "timestamp"
               type = "checkbox"
             />
-            Add Timestamp
+            Timestamp
           </label>
         </div>
       </div>
